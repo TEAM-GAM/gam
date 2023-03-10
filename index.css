@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3em;
+}
+@keyframes scale {
+    0%{
+        transform: rotateX(0deg);
+        transform: scale(1);
+    }
+    25%{
+        transform:rotateX(5deg)  ;
+        transform: scale(1.1);
+       }
+    50%{
+        transform: rotateX(10deg);
+        transform: scale(1.2);
+       
+    }
+    75%{
+        transform: rotateX(5deg);
+        transform: scale(1.1);
+       
+    }
+    100%{
+        transform:  rotateX(0deg)   ;
+        transform: scale(1);
+       
+    }
+}
+body{
+    position: relative;
+    background-color: black;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: 'Creepster', cursive;
+}
+img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+animation: scale 10s  infinite;
+
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.container form {
+  display: flex;
+ 
+  align-items: center;
+  flex-direction: column;
+  width: 600px;
+  height: 720px;
+  background-color: rgba(135, 135, 135, 0.774);
+  margin: 0 auto;
+  border-radius: 15px;
+}
+.container form .container-logo {
+  width: 100%;
+  height: 150px;
+  background-color: rgb(99, 4, 116);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px 15px 0 0;
+}
+.container form .container-logo .logo {
+  width: 160px;
+  height: 100px;
+  background-color: rgb(36, 30, 59);
+}
+.container form .container-input {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+form .container-input label {
+  font-size: 1.2em;
+  display: block;
+  width: 75%;
+  margin: auto auto 50px auto; 
+  font-family: 'Press Start 2P', cursive;
+}
+
+.input_squelet{
+    width: 100%;
+    height: 60px;
+    font-size: 1em;
+    border: none;
+    outline: 0;
+}
+form .container-input input {
+ text-align: center;
+  background-color: rgb(240, 248, 255);
+ margin-top: 8px;
+ 
+}
+form .container-checkbox{
+    display: flex;
+    align-items: center;
+    width: 75%;
+    font-size: 1.2em;
+    font-family: 'Creepster', cursive;
+    
+}
+form .container-checkbox #check{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+form .container-submit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+
+}
+form .container-submit input[type="submit"]{
+    width: 75%;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color:rgb(87, 54, 80) ;
+    transition: 0.2s;
+}
+form .container-submit input[type="submit"]:hover{
+    background-color:rgb(156, 77, 139) ;
+}
+form a{
+    margin-top: 1em;
+}

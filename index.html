@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 
 <head>
 
@@ -9,36 +10,43 @@
     <meta name="description" content="MMORPG 2d!">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-       
-<!-- Modificar ícone -->
-    <link rel="icon" href="" type="image/x-icon"> 
+
+    <!-- Modificar ícone -->
+    <link rel="icon" href="" type="image/x-icon">
 
 
-<link rel="stylesheet" href="styly.css">
+    <link rel="stylesheet" href="index.css">
 
 </head>
 
-<body> 
-	
-    <div style="background-color: aqua; width: 25%; height: 20rem; border-radius: 8px;  margin-left: 35%; margin-bottom: 30%;">
-        <div style="margin-top: 25%;">
-            <p> Entre ou cadastre-se em nossa<strong> Área de Membros</strong> para ter acesso ao jogo </p>
-
-
-			<div style="flex-direction: row;  margin-bottom: 30rem; ">
-				<div style="width: 100%; margin-left: 25%;">
- 
-	<form method="POST"  action="login.php" id="loginid">
-
-
-			<div><label style="width: 100%;">Login:</label><input placeholder="LOGIN" type="text" name="login" id="login1" required="required"><br>
-				<label>Senha:</label><input type="password" placeholder="SENHA" name="senha" id="senha1" required="required"><br>
-				<input style="margin-left: 35%; margin-top: 3rem; width: 10rem !important; height: 1.5rem;" type="submit" value="Entrar" id="login" name="logink" form="loginid">
-		
-	</form>
+<body>
+    <img src="./images/background-image.png" alt="">
+    <div class="container">
+    <form method="POST" action="login.php" id="loginid" autocomplete="off">
+        <div class="container-logo">
+            <div class="logo">LOGO</div>
+        </div>
+        <div class="container-input">
+            <label for="name">Nome:
+                <input class="input_squelet" type="text" name="name" id="name" >
+            </label>
+            <label for="password">Senha:
+                <input class="input_squelet" type="password" name="password" id="password">
+            </label>
+        </div>
+        <div class="container-checkbox">
+            <input type="checkbox" name="check" id="check">
+            <span>Lembre de mim</span>
+        </div>
+        <div class="container-submit">
+            <input class="input_squelet" type="submit" value="Entrar">
+        </div>
+        <a href="cadastrar.html">Não tem um login? Cadastre-se</a>
+    </form>
 </div>
-		<a href="cadastrar.html">Cadastre-se</a>
+    
+   
 
-				</div></div></div>
-	
-</body></html>
+</body>
+
+</html>
