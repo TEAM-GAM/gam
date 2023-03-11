@@ -1,14 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
-<head> <link  rel="icon" href="j.png" type="image/x-icon">
-    <meta charset="UTF-8"></head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./styles/register.css">
+</head>
+
 <body>
-
-    
-<form method="POST"  action="register.php" id="cadastroid">
-    <label>Login:</label><input type="text" name="login" id="login" maxlength="11" required><br>
-    <label>Senha:</label><input type="password" name="senha" id="senha" maxlength="35" required><br>
-    <input type="submit" value="Cadastrar" id="cadastrar" name="cadastrar" form="cadastroid">
-    </form>
+    <img draggable="false" id="background" src="./images/background-image-register.png" alt="">
+    <div class="container">
+        <form method="POST" action="register.php" id="cadastroid" autocomplete="off">
+            <div class="container-logo">
+                <div class="logo">LOGO</div>
+            </div>
+            <div class="container-input">
+                <label for="user">Usuario:
+                    <input class="input_squelet" type="text" name="user" id="user" maxlength="11" required>
+                </label>
+                <label for="password">Senha:
+                    <img id="showPassword" src="./images/eye.png">
+                    <input class="input_squelet" type="password" name="password" id="password" maxlength="35" required>
+                </label>
+            </div>
+            <div class="container-submit">
+                <input class="input_squelet" form="cadastroid" id="cadastrar" name="cadastrar" type="submit"
+                    value="Cadastrar">
+            </div>
+            <a href="index.html">Possui uma conta? <span>Entrar</span></a>
+        </form>
+    </div>
+    <script src="./scripts/index.js"></script>
 </body>
 
-
+</html>
