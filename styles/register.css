@@ -63,7 +63,7 @@ body .container {
   width: 500px;
   height: 620px;
   background-color: rgba(135, 135, 135, 0.774);
-  margin: 0 auto;
+  margin: 30px auto auto auto;
   border-radius: 15px;
 }
 .container form .container-logo {
