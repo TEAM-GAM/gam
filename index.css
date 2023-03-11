@@ -61,11 +61,10 @@ animation: scale 10s  infinite;
 }
 .container form {
   display: flex;
- 
   align-items: center;
   flex-direction: column;
-  width: 600px;
-  height: 720px;
+  width: 500px;
+  height: 660px;
   background-color: rgba(135, 135, 135, 0.774);
   margin: 0 auto;
   border-radius: 15px;
@@ -93,7 +92,7 @@ form .container-input label {
   font-size: 1.2em;
   display: block;
   width: 75%;
-  margin: auto auto 50px auto; 
+  margin: auto auto 30px auto; 
   font-family: 'Press Start 2P', cursive;
 }
 
@@ -108,8 +107,9 @@ form .container-input input {
  text-align: center;
   background-color: rgb(240, 248, 255);
  margin-top: 8px;
- 
 }
+
+
 form .container-checkbox{
     display: flex;
     align-items: center;
@@ -128,7 +128,7 @@ form .container-submit{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
 
 }
 form .container-submit input[type="submit"]{
